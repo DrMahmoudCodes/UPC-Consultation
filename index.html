@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPC Consult</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>UPC Consult</h1>
+        <h3>A Trusted Pharmaceutical Database between your Hands</h3>
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <div class="product-grid" id="productGrid">
+            </div>
+        <div id="fullscreen-overlay" class="overlay">
+            <span class="close-btn" onclick="closeFullscreen()">&times;</span>
+            <div class="zoom-controls">
+                <button onclick="zoomIn()">+</button>
+                <button onclick="zoomOut()">-</button>
+                <button onclick="resetZoom()">Reset</button>
+            </div>
+            <div class="image-container">
+                <img id="fullscreen-image" src="" alt="Fullscreen Image">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
